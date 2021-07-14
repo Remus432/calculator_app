@@ -1,0 +1,46 @@
+.header
+  display: flex
+  justify-content: space-between
+
+  &__logo
+    font-size: 4rem
+    color: #fff
+
+  &__themes
+    display: flex
+    color: #fff
+
+    &-span
+      align-self: flex-end
+      margin-bottom: .5rem
+      margin-right: 2rem
+      font-size: 1.4rem
+      letter-spacing: .25rem
+
+    &-count
+      display: flex
+      justify-content: space-between
+      width: 75%
+      margin: auto
+      margin-bottom: .5rem
+
+      & span
+        font-size: 1.3rem
+
+    &-toggle
+      width: 85px
+      height: 30px
+      background-color: $toggle-bg
+      border-radius: 25px
+      position: relative
+      cursor: pointer
+
+      &-circle
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        left: 6px
+        width: 20px
+        height: 20px
+        border-radius: 50%
+        background-color: $key-bg-red

@@ -1,0 +1,45 @@
+.keypad
+  background-color: $toggle-bg
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  grid-gap: 1.5rem
+  padding: 2.8rem
+  border-radius: 10px
+  margin-top: 3rem
+
+  &__key
+    height: 70px
+    background-color: $key-bg-orange
+    color: $text-blue
+    cursor: pointer
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 3rem
+    border-radius: 10px
+    box-shadow: 0 4px 0 rgba($key-shadow-orange, 1)
+
+    &:active
+      box-shadow: 0 0 0
+      transform: translateY(5px)
+
+    &-del
+      background-color: $key-bg-blue
+      box-shadow: 0 4px 0 rgba($key-shadow-blue, 1)
+      color: #fff
+      font-size: 2rem
+
+    &-reset
+      grid-column: 1 / 3
+      font-size: 2rem
+      background-color: $key-bg-blue
+      box-shadow: 0 4px 0 rgba($key-shadow-blue, 1)
+      color: #fff
+
+    &-equal
+      grid-column: 3 / 5
+      font-size: 2rem
+      background-color: $key-bg-red
+      box-shadow: 0 4px 0 rgba($key-shadow-red, 1)
+      color: #fff
+      
